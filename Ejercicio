@@ -1,0 +1,41 @@
+group: UIBK - VUELO, AEROPUERTO, PASAJERO, RESERVA
+description: Tables from and for the lecture [Databases: Foundations, Data Models and System Concepts - University of Innsbruck](http://dbis-informatik.uibk.ac.at/249-0-VO-Datenbanksysteme.html) chapter 3 
+category@de:Universität Innsbruck
+category@en:University of Innsbruck
+
+VUELO = {
+Numero, Origen, Destino, Salida
+
+345, 'MAD', 'CDG', '12:30'
+321, 'MAD', 'ORY', '19:05'
+165, 'LHR', 'CDG', '09:55'
+903, 'CDG', 'LHR', '14:40'
+447, 'CDG', 'LHR', '17:00'
+}
+
+AEROPUERTO = {
+Codigo, Ciudad
+
+'MAD', 'Madrid'
+'LGW', 'Londres'
+'LHR', 'Londres'
+'ORY', 'París'
+'CDG', 'París'
+}
+
+PASAJERO = {
+Dni, Nombre
+
+123, 'María'
+456, 'Pedro'
+789, 'Isabel'
+}
+
+RESERVA = {
+Dni, Numero, Fecha, Precio
+
+789, 165, '07-01-11', 210
+123, 345, '20-12-10', 170
+789, 321, '15-12-10', 250
+456, 345, '03-11-10', 190
+}
